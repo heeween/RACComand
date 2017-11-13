@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		791261F3B38C2B0861EC6957 /* libPods-RACComand.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4383C6DD1D29C9B0797C77E /* libPods-RACComand.a */; };
 		9C7C89211FB9A332001A57FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C89201FB9A332001A57FF /* AppDelegate.m */; };
 		9C7C89241FB9A332001A57FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C89231FB9A332001A57FF /* ViewController.m */; };
 		9C7C89291FB9A332001A57FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7C89281FB9A332001A57FF /* Assets.xcassets */; };
 		9C7C892F1FB9A332001A57FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C892E1FB9A332001A57FF /* main.m */; };
+		9C7C89371FB9A4FA001A57FF /* CCOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C89361FB9A4FA001A57FF /* CCOrderCell.m */; };
+		9C7C893A1FB9A507001A57FF /* CCOrderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C89391FB9A507001A57FF /* CCOrderViewModel.m */; };
+		9C7C893D1FB9A53F001A57FF /* UITableView+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C893C1FB9A53F001A57FF /* UITableView+RACCommandSupport.m */; };
+		9C7C89401FB9AA4B001A57FF /* CCOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C893F1FB9AA4B001A57FF /* CCOrderModel.m */; };
+		9C7C89431FB9AD8A001A57FF /* CCOrderBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C89421FB9AD8A001A57FF /* CCOrderBottomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65583C7DC2068D1022B7F6D0 /* Pods-RACComand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACComand.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACComand/Pods-RACComand.release.xcconfig"; sourceTree = "<group>"; };
+		713829824CBF50A9A376A1DE /* Pods-RACComand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACComand.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACComand/Pods-RACComand.debug.xcconfig"; sourceTree = "<group>"; };
 		9C7C891C1FB9A332001A57FF /* RACComand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACComand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7C891F1FB9A332001A57FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C7C89201FB9A332001A57FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -22,6 +30,17 @@
 		9C7C89281FB9A332001A57FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7C892D1FB9A332001A57FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7C892E1FB9A332001A57FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C7C89351FB9A4FA001A57FF /* CCOrderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCOrderCell.h; sourceTree = "<group>"; };
+		9C7C89361FB9A4FA001A57FF /* CCOrderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCOrderCell.m; sourceTree = "<group>"; };
+		9C7C89381FB9A507001A57FF /* CCOrderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCOrderViewModel.h; sourceTree = "<group>"; };
+		9C7C89391FB9A507001A57FF /* CCOrderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCOrderViewModel.m; sourceTree = "<group>"; };
+		9C7C893B1FB9A53F001A57FF /* UITableView+RACCommandSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+RACCommandSupport.h"; sourceTree = "<group>"; };
+		9C7C893C1FB9A53F001A57FF /* UITableView+RACCommandSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+RACCommandSupport.m"; sourceTree = "<group>"; };
+		9C7C893E1FB9AA4B001A57FF /* CCOrderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCOrderModel.h; sourceTree = "<group>"; };
+		9C7C893F1FB9AA4B001A57FF /* CCOrderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCOrderModel.m; sourceTree = "<group>"; };
+		9C7C89411FB9AD8A001A57FF /* CCOrderBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCOrderBottomView.h; sourceTree = "<group>"; };
+		9C7C89421FB9AD8A001A57FF /* CCOrderBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCOrderBottomView.m; sourceTree = "<group>"; };
+		C4383C6DD1D29C9B0797C77E /* libPods-RACComand.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACComand.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791261F3B38C2B0861EC6957 /* libPods-RACComand.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29B6FC8FEDE35E72D7D028D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				713829824CBF50A9A376A1DE /* Pods-RACComand.debug.xcconfig */,
+				65583C7DC2068D1022B7F6D0 /* Pods-RACComand.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8AA1B13473258EDF3E6BC863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4383C6DD1D29C9B0797C77E /* libPods-RACComand.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C7C89131FB9A332001A57FF = {
 			isa = PBXGroup;
 			children = (
 				9C7C891E1FB9A332001A57FF /* RACComand */,
 				9C7C891D1FB9A332001A57FF /* Products */,
+				29B6FC8FEDE35E72D7D028D4 /* Pods */,
+				8AA1B13473258EDF3E6BC863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +97,16 @@
 				9C7C89201FB9A332001A57FF /* AppDelegate.m */,
 				9C7C89221FB9A332001A57FF /* ViewController.h */,
 				9C7C89231FB9A332001A57FF /* ViewController.m */,
+				9C7C893E1FB9AA4B001A57FF /* CCOrderModel.h */,
+				9C7C893F1FB9AA4B001A57FF /* CCOrderModel.m */,
+				9C7C89351FB9A4FA001A57FF /* CCOrderCell.h */,
+				9C7C89361FB9A4FA001A57FF /* CCOrderCell.m */,
+				9C7C89411FB9AD8A001A57FF /* CCOrderBottomView.h */,
+				9C7C89421FB9AD8A001A57FF /* CCOrderBottomView.m */,
+				9C7C89381FB9A507001A57FF /* CCOrderViewModel.h */,
+				9C7C89391FB9A507001A57FF /* CCOrderViewModel.m */,
+				9C7C893B1FB9A53F001A57FF /* UITableView+RACCommandSupport.h */,
+				9C7C893C1FB9A53F001A57FF /* UITableView+RACCommandSupport.m */,
 				9C7C89281FB9A332001A57FF /* Assets.xcassets */,
 				9C7C892D1FB9A332001A57FF /* Info.plist */,
 				9C7C892E1FB9A332001A57FF /* main.m */,
@@ -72,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C7C89321FB9A332001A57FF /* Build configuration list for PBXNativeTarget "RACComand" */;
 			buildPhases = (
+				7165A929CAAD0C40DB454F3E /* [CP] Check Pods Manifest.lock */,
 				9C7C89181FB9A332001A57FF /* Sources */,
 				9C7C89191FB9A332001A57FF /* Frameworks */,
 				9C7C891A1FB9A332001A57FF /* Resources */,
+				7FB6C8E7648431B59EDCEA2D /* [CP] Embed Pods Frameworks */,
+				15BFC88B268C69A8AA4208F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,13 +181,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15BFC88B268C69A8AA4208F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RACComand/Pods-RACComand-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACComand/Pods-RACComand-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7165A929CAAD0C40DB454F3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RACComand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB6C8E7648431B59EDCEA2D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACComand/Pods-RACComand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C7C89181FB9A332001A57FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C7C89401FB9AA4B001A57FF /* CCOrderModel.m in Sources */,
+				9C7C893D1FB9A53F001A57FF /* UITableView+RACCommandSupport.m in Sources */,
 				9C7C89241FB9A332001A57FF /* ViewController.m in Sources */,
+				9C7C893A1FB9A507001A57FF /* CCOrderViewModel.m in Sources */,
 				9C7C892F1FB9A332001A57FF /* main.m in Sources */,
+				9C7C89371FB9A4FA001A57FF /* CCOrderCell.m in Sources */,
+				9C7C89431FB9AD8A001A57FF /* CCOrderBottomView.m in Sources */,
 				9C7C89211FB9A332001A57FF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +360,7 @@
 		};
 		9C7C89331FB9A332001A57FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 713829824CBF50A9A376A1DE /* Pods-RACComand.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -263,6 +375,7 @@
 		};
 		9C7C89341FB9A332001A57FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65583C7DC2068D1022B7F6D0 /* Pods-RACComand.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
