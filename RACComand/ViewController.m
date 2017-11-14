@@ -92,8 +92,7 @@ static NSString *ccOrderCell = @"ccOrderCell";
     RACSignal *touchSignal = [[cell.selectButton
                                rac_signalForControlEvents:UIControlEventTouchUpInside]
                               takeUntil:cell.rac_prepareForReuseSignal];
-    RACSignal *touchIndexPathSignal = [[touchSignal map:^id(id value) { return indexPath; }]
-                                       doNext:^(id x) { model.selected = !model.selected; }];
+    RACSignal *touchIndexPathSignal = [touchSignal doNext:^(id x) { model.selected = !model.selected; }];
     [self rac_liftSelector:@selector(reloadTableView:) withSignals:touchIndexPathSignal, nil];
     return cell;
 }

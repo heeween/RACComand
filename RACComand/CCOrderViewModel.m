@@ -32,14 +32,15 @@
                        @{@"time":@"今天 17:00",@"startAddress":@"浙江吉利控股集团有限公司",@"endAddress":@"杭州半山国家森林公园",@"billPrice":@2.00},
                        @{@"time":@"今天 17:00",@"startAddress":@"浙江吉利控股集团有限公司",@"endAddress":@"瑞立东方花城",@"billPrice":@15.00},
                        @{@"time":@"今天 17:00",@"startAddress":@"浙江吉利控股集团有限公司",@"endAddress":@"瑞立东方花城",@"billPrice":@241.00},];
-    NSMutableArray *modelArray = [NSMutableArray array];
-    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        [modelArray addObject:[CCOrderModel orderWith:obj]];
-    }];
+
     @weakify(self);
     self.refreashCmd = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             @strongify(self);
+            NSMutableArray *modelArray = [NSMutableArray array];
+            [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [modelArray addObject:[CCOrderModel orderWith:obj]];
+            }];
             [self.orderArray removeAllObjects];
             [self.orderArray addObjectsFromArray:modelArray];
             [subscriber sendNext:self.orderArray];
@@ -51,6 +52,10 @@
     self.loadMoreCmd = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
             @strongify(self);
+            NSMutableArray *modelArray = [NSMutableArray array];
+            [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+                [modelArray addObject:[CCOrderModel orderWith:obj]];
+            }];
             [self.orderArray addObjectsFromArray:modelArray];
             [subscriber sendNext:self.orderArray];
             [subscriber sendCompleted];
